@@ -78,25 +78,25 @@
 # print("Resultado:", resultado)
 
 #5
-def valorPagamento(valor, dia):
-    if(dia != 0):
-        return valor + ((valor*3/100) + (dia*0.1))
-    else:
-        return valor
+# def valorPagamento(valor, dia):
+#     if(dia != 0):
+#         return valor + ((valor*3/100) + (dia*0.1))
+#     else:
+#         return valor
 
-quantiPres = 0
-valorPres = 0
-numPrestacao = 1
-while numPrestacao != 0:
-    prestacao = int(input("Digite o valor da prestação: R$ "))
-    if(prestacao == 0):
-        break
-    numeroDias = int(input("Digite o número de dias atrasados: "))
-    quantiPres = quantiPres + 1
-    valorPres = valorPres + prestacao
-    resultado = valorPagamento(prestacao, numeroDias)
-    print(resultado)
-print(f"Relatório do dia: quantidade de prestações: {quantiPres}, total valor: {valorPres:0.2f}")
+# quantiPres = 0
+# valorPres = 0
+# numPrestacao = 1
+# while numPrestacao != 0:
+#     prestacao = int(input("Digite o valor da prestação: R$ "))
+#     if(prestacao == 0):
+#         break
+#     numeroDias = int(input("Digite o número de dias atrasados: "))
+#     quantiPres = quantiPres + 1
+#     valorPres = valorPres + prestacao
+#     resultado = valorPagamento(prestacao, numeroDias)
+#     print(resultado)
+# print(f"Relatório do dia: quantidade de prestações: {quantiPres}, total valor: {valorPres:0.2f}")
 
 
 
