@@ -1,33 +1,12 @@
-# def Queue():
-#     students = int(input())
-
-#     index = 1
-
-#     while index <= students:
-#         qntGrades = int(input())
-#         grades = input().split(' ')
-
-#         if(qntGrades != len(grades)):
-#             break
-
-#         for nota in grades:
-#             print('nota', nota, end="")
-
-#         index += 1
-#     print(grades)
-
-
-# def main():
-#     Queue()
-
-# main()
-
 def VerifyIndex(arr, n):
-    for i in range(1, n - 1, 1):
-      index = 0
-      if (arr[i] > arr[i - 1] and arr[i] > arr[i + 1]):
-          print('aa',arr[i])
-          index = index + 1
+    a = arr
+    b = sorted(a, reverse=True)
+
+    index = 0
+
+    for i in range(n):
+        if (a[i] == b[i]):
+            index = index + 1
     return index
 
 
@@ -41,9 +20,23 @@ if __name__ == '__main__':
         n = len(grades)
 
         if(qntGrades != n):
-            print('oi')
             break
 
         print(VerifyIndex(grades, n))
 
         index = index + 1
+
+# n = int(input())
+# while n > 0:
+#     n -= 1
+#     m = int(input())
+#     a = input().split()
+#     for ind, i in enumerate(a):
+#         a[ind] = int(a[ind])
+#     b = sorted(a)
+#     b.reverse()
+#     total = 0
+#     for ind, i in enumerate(a):
+#         if (a[ind] == b[ind]):
+#             total +=1
+#     print(total)
