@@ -1,9 +1,6 @@
 from functools import reduce
 import operator
 
-# def diffr(sortedPar):
-#     return sortedPar[0] - sum(sortedPar[1:])
-
 def VerifyLethality(arr, n):
   ages =  arr.copy()
 
@@ -23,8 +20,6 @@ def VerifyLethality(arr, n):
     xdifImpar = 0
 
   finalResult = xdifPar + xdifImpar
-
-  # diffr(sortedPar)
 
   return finalResult
 
