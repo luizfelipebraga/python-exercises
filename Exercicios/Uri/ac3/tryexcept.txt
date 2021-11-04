@@ -1,0 +1,6 @@
+try:
+  main()
+except:
+  break
+
+EOF END OF FILE
