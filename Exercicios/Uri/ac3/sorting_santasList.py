@@ -24,8 +24,8 @@ def main():
     a = len(aprov)
     r = len(reprov)
 
-    for i in range(len(sortedNames)):
-        print(sortedNames[i])
+    for i in sortedNames:
+        print(i)
     print(f'Se comportaram: {a} | Nao se comportaram: {r}')
 
 

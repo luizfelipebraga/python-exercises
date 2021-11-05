@@ -2,21 +2,25 @@ from functools import reduce
 import operator
 
 def VerifyLethality(arr):
-  ages =  arr
+  ages =  arr.copy()
 
+  ages = sorted(ages, reverse=True)
+  
   slicePar = ages[0::2]
   sliceImp = ages[1::2]
 
-  sortedPar = sorted(slicePar, reverse=True)
-  sortedImpar = sorted(sliceImp, reverse=True)
+  nI = len(sliceImp)
 
-  xdifPar = reduce(operator.__sub__, sortedPar)
-  xdifImpar = reduce(operator.__sub__, sortedImpar)
+  xdifPar = reduce(operator.__sub__, slicePar)
+  xdifImpar = reduce(operator.__sub__, sliceImp)
 
-  if 0 in sortedPar:
-    xdifPar = 0
+  if 0 in slicePar:
+    xdifPar = max(slicePar)
   
-  if 0 in sortedImpar:
+  if 0 in sliceImp:
+    xdifImpar = max(sliceImp)
+
+  if(nI % 2) != 0:
     xdifImpar = 0
 
   finalResult = xdifPar + xdifImpar

@@ -6,7 +6,6 @@ def main():
 
     ask = [int(x) for x in input().split(' ')]
 
-
     numCitizens = ask[0]
     numQueries = ask[1]
 
@@ -30,4 +29,8 @@ def main():
     for i in queries:
         print(i)
 
-main()
+while True:
+  try:
+    main()
+  except:
+    break
