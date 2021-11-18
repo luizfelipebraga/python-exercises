@@ -2,7 +2,7 @@ from functools import reduce
 import operator
 
 def VerifyLethality(arr):
-  ages =  arr
+  ages = arr.copy()
 
   slicePar = ages[0::2]
   sliceImp = ages[1::2]
@@ -24,8 +24,9 @@ def VerifyLethality(arr):
   return finalResult
   
 def main():
-    numberVirus = int(input())
+    int(input())
     virusAges = [int(x) for x in input().split(' ')]
+
     print(VerifyLethality(virusAges))
     
 while True:
