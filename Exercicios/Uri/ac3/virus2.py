@@ -2,7 +2,7 @@ from functools import reduce
 import operator
 
 def VerifyLethality(arr):
-  ages =  arr.copy()
+  ages =  arr.copy()        
 
   ages = sorted(ages, reverse=True)
   
