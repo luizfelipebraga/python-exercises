@@ -16,13 +16,12 @@ def bubble_sort(s, crescente=False):
 
   if(crescente):
     empurra = empurra_maximo
-  else: empurra = empurra_maximo
+  else: empurra = empurra_minimo
 
   while(n > 1):
     empurra(s, n)
     n-=1
 
-
-s = [5, 39, 40, 48, 52, 56]
+s = [48,5,39,56,40,52]
 
 bubble_sort(s)
