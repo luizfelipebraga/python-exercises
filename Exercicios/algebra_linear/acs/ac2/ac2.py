@@ -1,10 +1,21 @@
 import numpy as np 
 
 #1-------ESCALAR-----------------
-# a =  [-2, 1, 5, -4, 1]
-# b = [3, 4, 2, -3, 0]
+# a =  [1, 1, -1, 1, 1]
+# b = [-2, 3, -2, 3, -2]
 
 # print(np.dot(a, b))
+
+#----------angulo
+vector_1 = [1, -1, 1, -1, 1]
+vector_2 = [1, 1, 1, 1, 1]
+
+unit_vector_1 = vector_1 / np.linalg.norm(vector_1)
+unit_vector_2 = vector_2 / np.linalg.norm(vector_2)
+dot_product = np.dot(unit_vector_1, unit_vector_2)
+angle = np.arccos(dot_product)
+
+print(angle)
 
 #2------------------
 # a = [1,1,1]
@@ -33,15 +44,16 @@ import numpy as np
 
 #-------------NORMA---------------
 from numpy import linalg as LA
-# a = np.array([7,6])
-#l1 = np.linalg.norm(a,1)
-# l1 = LA.norm(a,1)
-# print(l1)
+u = np.array([2,-2,1,3,0])
+l1 = np.linalg.norm(u,1)
+l1 = LA.norm(u,1)
+print(l1)
 
-# a = np.array([2,3,4])
-# l2 = LA.norm(a,2)
+# v = np.array([1,1,-1,0,2])
+# l2 = np.linalg.norm(v,1)
+# l2 = LA.norm(v,2)
 # print(l2)
-#----------------------------
+# ----------------------------
 
 
 #-------SE O RESULTADO DA ESCALAR == 0 OS VETORES SAO PERPENDICULARES-----------
