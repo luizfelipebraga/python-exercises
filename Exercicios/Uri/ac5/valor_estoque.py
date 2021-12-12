@@ -1,4 +1,4 @@
-produtos = [['smartphone', 100, 1199.00] , ['televisao', 5, 2599.00], ['notebook', 20, 4500.00]]
+produtos = [['notebook', False, 40, 5900.00] , ['tablet',True, 10, 1800.00], ['notebook',True, 35, 1299.00]]
 
 def valor_estoque1(produtos):
   valor = 0

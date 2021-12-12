@@ -3,7 +3,7 @@ def fibm(n, memo={1:1, 2:1}):
     return memo[n]
 
 def main():
-    for i in range(1, 2000 + 1):
+    for i in range(1, 7 + 1):
         print(fibm(i), end=' ')
 
 main()
