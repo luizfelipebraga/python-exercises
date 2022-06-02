@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.first {
+    width: 500px;
+    height: 200px;
+    border: 15px solid blue;
+    background-color: yellow;
+}
+
+.second {
+    width: 500px;
+    height: 200px;
+    padding: 30px;
+
+    background-color: cyan;
+}
+
+p {
+display: inline;
+margin-top: Opx;
+margin-bottom: Opx;
+margin-left: 3px;
+}
+
+.div1 {
+width: 400px;
+height: 150px;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+background-color: yellow;
+}
+
+.div2 {
+width: 400px;
+height: 150px;
+display: flex;
+align-items : center;
+justify-content: space-around;
+background-color: cyan;
+}

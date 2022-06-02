@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Listagem de Produtos</h1>
+    <table>
+        <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Preço</th>
+            <th>Status do Estoque</th>
+        </tr>
+        {% for produto in lista_produtos %}
+        <tr>
+            <td>{{produto.marca}}</td>
+            <td>{{produto.modelo}}</td>
+            <td>{{produto.preco}}</td>
+            <td>{{produto.qtd_estoque}}</td>
+            {% if produto.qtd_estoque < 10 %} <td>Baixo</td>
+                {% elif produto.qtd_estoque < 50 %} <td>Medio</td>
+                    {% else %}
+                    <td>Alto</td>
+                    {% endif %}
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+
+</html>
